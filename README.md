@@ -1,90 +1,78 @@
-# Job Matcher Assignment
+# Buddy Bot: Setup & API Usage
 
-A comprehensive job matching system that combines job scraping, resume matching, vector search, and a user-friendly interface.
+## 1. Install Dependencies
 
-## Project Structure
+First, install [uv](https://github.com/astral-sh/uv) (a fast Python package manager):
 
-```
-job-matcher-assignment/
-│
-├── scraper/             # Part 1: Job-Scraping Engine
-│   ├── linkedin_scraper.py
-│   ├── naukri_scraper.py
-│   ├── company_scraper.py
-│   └── deduper.py
-│
-├── matcher/             # Part 2: Resume-Based Matching
-│   ├── schema.py
-│   ├── scorer.py
-│   ├── matcher.py
-│   └── test_matcher.py
-│
-├── vector_search/       # Part 3: Vector DB Integration
-│   ├── embedder.py
-│   ├── vector_db.py
-│   └── semantic_matcher.py
-│
-├── bot/                 # Part 4: Buddy Bot CLI
-│   ├── cli.py
-│   ├── parser.py
-│   └── utils.py
-│
-├── frontend/            # Part 5: UI & Deployment
-│   ├── index.html
-│   ├── app.js
-│   ├── style.css
-│   └── api.js
-│
-├── devops/              # Part 6: DevOps & CI
-│   └── .github/workflows/ci.yml
-│
-├── jobs.json            # Output of scraper
-├── resume.json          # Input for matcher
-├── README.md
-└── requirements.txt
-```
-
-## Setup Instructions
-
-1. Create a virtual environment:
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+curl -LsSf https://astral.sh/uv/install.sh | sh
+source $HOME/.local/bin/env
 ```
 
-2. Install dependencies:
+Then, sync your Python dependencies:
+
 ```bash
-pip install -r requirements.txt
+uv sync
 ```
+ Activate the virtual environment
 
-3. Run the scraper:
 ```bash
-python scraper/linkedin_scraper.py
-python scraper/naukri_scraper.py
+source .venv/bin/activate
 ```
 
-4. Start the matching process:
+## 2. Start the API Server
+
+Start the FastAPI server using Uvicorn:
+
 ```bash
-python matcher/matcher.py
+uvicorn api_job_search:app --host 0.0.0.0 --port 8000
 ```
 
-5. Launch the frontend:
+---
+
+## 3. How to Use the API
+
+### A. Job Search Endpoint
+
+Search for jobs by title, experience, and location:
+
 ```bash
-cd frontend
-python -m http.server 8000
+curl -X POST http://localhost:8000/scrape_and_save_jobs \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Software Engineer",
+    "experience": 2,
+    "location": "Bangalore"
+  }'
 ```
 
-## Components
+### B. Resume Matching Endpoint
 
-1. **Job Scraping Engine**: Scrapes job listings from LinkedIn and Naukri
-2. **Resume-Based Matching**: Matches resumes with job descriptions
-3. **Vector Search**: Implements semantic search using vector embeddings
-4. **Buddy Bot CLI**: Command-line interface for job matching
-5. **Frontend**: Web interface for job matching
-6. **DevOps**: CI/CD pipeline configuration
+Find jobs that match your resume details:
 
-## Requirements
+```bash
+curl -X POST http://localhost:8000/match_resume \
+  -H "Content-Type: application/json" \
+  -d '{
+    "skills": ["Python", "Django", "AWS", "REST APIs"],
+    "experience": 3,
+    "location": "Bangalore",
+    "preferred_locations": ["Bangalore", "Remote"],
+    "about": "Backend developer with 3 years of experience building scalable APIs.",
+    "projects": [
+      {
+        "name": "Inventory Management System",
+        "description": "Built a Django-based inventory system for a retail client."
+      }
+    ]
+  }'
+```
 
-- Python 3.8+
-- Node.js 14+ (for frontend)
-- Modern web browser 
+---
+
+**Tip:**
+- For the CLI, just run:
+  ```bash
+  python bot/cli.py
+  ```
+  and follow the interactive prompts!
