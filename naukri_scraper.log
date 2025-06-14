@@ -1,0 +1,84 @@
+2025-06-14 10:11:49.183 | INFO     | __main__:scrape_jobs:117 - Searching for Machine Learning Engineer jobs in Bangalore
+2025-06-14 10:12:01.756 | ERROR    | __main__:search_jobs:71 - Error during job search: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000104bf6668 cxxbridge1$str$ptr + 2723108
+1   chromedriver                        0x0000000104bee8dc cxxbridge1$str$ptr + 2690968
+2   chromedriver                        0x0000000104742714 cxxbridge1$string$len + 90428
+3   chromedriver                        0x00000001047897c0 cxxbridge1$string$len + 381416
+4   chromedriver                        0x00000001047cade8 cxxbridge1$string$len + 649232
+5   chromedriver                        0x000000010477d9c8 cxxbridge1$string$len + 332784
+6   chromedriver                        0x0000000104bba28c cxxbridge1$str$ptr + 2476360
+7   chromedriver                        0x0000000104bbd520 cxxbridge1$str$ptr + 2489308
+8   chromedriver                        0x0000000104b9ba78 cxxbridge1$str$ptr + 2351412
+9   chromedriver                        0x0000000104bbdda8 cxxbridge1$str$ptr + 2491492
+10  chromedriver                        0x0000000104b8cd6c cxxbridge1$str$ptr + 2290728
+11  chromedriver                        0x0000000104bddd74 cxxbridge1$str$ptr + 2622512
+12  chromedriver                        0x0000000104bddf00 cxxbridge1$str$ptr + 2622908
+13  chromedriver                        0x0000000104bee528 cxxbridge1$str$ptr + 2690020
+14  libsystem_pthread.dylib             0x00000001837e2c0c _pthread_start + 136
+15  libsystem_pthread.dylib             0x00000001837ddb80 thread_start + 8
+
+2025-06-14 10:12:01.756 | ERROR    | __main__:scrape_jobs:139 - Error during scraping: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000104bf6668 cxxbridge1$str$ptr + 2723108
+1   chromedriver                        0x0000000104bee8dc cxxbridge1$str$ptr + 2690968
+2   chromedriver                        0x0000000104742714 cxxbridge1$string$len + 90428
+3   chromedriver                        0x00000001047897c0 cxxbridge1$string$len + 381416
+4   chromedriver                        0x00000001047cade8 cxxbridge1$string$len + 649232
+5   chromedriver                        0x000000010477d9c8 cxxbridge1$string$len + 332784
+6   chromedriver                        0x0000000104bba28c cxxbridge1$str$ptr + 2476360
+7   chromedriver                        0x0000000104bbd520 cxxbridge1$str$ptr + 2489308
+8   chromedriver                        0x0000000104b9ba78 cxxbridge1$str$ptr + 2351412
+9   chromedriver                        0x0000000104bbdda8 cxxbridge1$str$ptr + 2491492
+10  chromedriver                        0x0000000104b8cd6c cxxbridge1$str$ptr + 2290728
+11  chromedriver                        0x0000000104bddd74 cxxbridge1$str$ptr + 2622512
+12  chromedriver                        0x0000000104bddf00 cxxbridge1$str$ptr + 2622908
+13  chromedriver                        0x0000000104bee528 cxxbridge1$str$ptr + 2690020
+14  libsystem_pthread.dylib             0x00000001837e2c0c _pthread_start + 136
+15  libsystem_pthread.dylib             0x00000001837ddb80 thread_start + 8
+
+2025-06-14 10:12:41.920 | INFO     | __main__:scrape_jobs:117 - Searching for Machine Learning Engineer jobs in Bangalore
+2025-06-14 10:12:48.725 | ERROR    | __main__:search_jobs:71 - Error during job search: Message: element not interactable
+  (Session info: chrome=137.0.7151.104)
+Stacktrace:
+0   chromedriver                        0x00000001046f6668 cxxbridge1$str$ptr + 2723108
+1   chromedriver                        0x00000001046ee8dc cxxbridge1$str$ptr + 2690968
+2   chromedriver                        0x0000000104242588 cxxbridge1$string$len + 90032
+3   chromedriver                        0x00000001042812dc cxxbridge1$string$len + 347396
+4   chromedriver                        0x000000010427ef94 cxxbridge1$string$len + 338364
+5   chromedriver                        0x00000001042cade8 cxxbridge1$string$len + 649232
+6   chromedriver                        0x000000010427d9c8 cxxbridge1$string$len + 332784
+7   chromedriver                        0x00000001046ba28c cxxbridge1$str$ptr + 2476360
+8   chromedriver                        0x00000001046bd520 cxxbridge1$str$ptr + 2489308
+9   chromedriver                        0x000000010469ba78 cxxbridge1$str$ptr + 2351412
+10  chromedriver                        0x00000001046bdda8 cxxbridge1$str$ptr + 2491492
+11  chromedriver                        0x000000010468cd6c cxxbridge1$str$ptr + 2290728
+12  chromedriver                        0x00000001046ddd74 cxxbridge1$str$ptr + 2622512
+13  chromedriver                        0x00000001046ddf00 cxxbridge1$str$ptr + 2622908
+14  chromedriver                        0x00000001046ee528 cxxbridge1$str$ptr + 2690020
+15  libsystem_pthread.dylib             0x00000001837e2c0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x00000001837ddb80 thread_start + 8
+
+2025-06-14 10:12:48.726 | ERROR    | __main__:scrape_jobs:139 - Error during scraping: Message: element not interactable
+  (Session info: chrome=137.0.7151.104)
+Stacktrace:
+0   chromedriver                        0x00000001046f6668 cxxbridge1$str$ptr + 2723108
+1   chromedriver                        0x00000001046ee8dc cxxbridge1$str$ptr + 2690968
+2   chromedriver                        0x0000000104242588 cxxbridge1$string$len + 90032
+3   chromedriver                        0x00000001042812dc cxxbridge1$string$len + 347396
+4   chromedriver                        0x000000010427ef94 cxxbridge1$string$len + 338364
+5   chromedriver                        0x00000001042cade8 cxxbridge1$string$len + 649232
+6   chromedriver                        0x000000010427d9c8 cxxbridge1$string$len + 332784
+7   chromedriver                        0x00000001046ba28c cxxbridge1$str$ptr + 2476360
+8   chromedriver                        0x00000001046bd520 cxxbridge1$str$ptr + 2489308
+9   chromedriver                        0x000000010469ba78 cxxbridge1$str$ptr + 2351412
+10  chromedriver                        0x00000001046bdda8 cxxbridge1$str$ptr + 2491492
+11  chromedriver                        0x000000010468cd6c cxxbridge1$str$ptr + 2290728
+12  chromedriver                        0x00000001046ddd74 cxxbridge1$str$ptr + 2622512
+13  chromedriver                        0x00000001046ddf00 cxxbridge1$str$ptr + 2622908
+14  chromedriver                        0x00000001046ee528 cxxbridge1$str$ptr + 2690020
+15  libsystem_pthread.dylib             0x00000001837e2c0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x00000001837ddb80 thread_start + 8
+
+2025-06-14 10:13:54.264 | INFO     | __main__:scrape_jobs:171 - Searching for Machine Learning Engineer jobs in Bangalore
+2025-06-14 10:14:12.667 | INFO     | __main__:scrape_jobs:171 - Searching for Machine Learning Engineer jobs in India

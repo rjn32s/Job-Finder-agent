@@ -14,6 +14,17 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
+def filter_jobs(jobs, job_title=None, location=None):
+    def match(job, field, value):
+        if not value:
+            return True
+        field_val = (job.get(field, '') or '')
+        return value.lower() in field_val.lower()
+    return [
+        job for job in jobs
+        if match(job, 'title', job_title) and match(job, 'location', location)
+    ]
+
 class CompanyScraper:
     def __init__(self):
         # Set up detailed logging
@@ -173,7 +184,7 @@ class CompanyScraper:
                     "q": query,
                     "gl": "in",  # Set location to India
                     "hl": "en",  # Set language to English
-                    "num": 10,   # Get 10 results per company
+                    "num": 5,   # Get 10 results per company
                     "type": "search"
                 }
             )
@@ -200,6 +211,23 @@ class CompanyScraper:
             self.logger.error(f"Error searching jobs for {company_info['name']}: {str(e)}")
             return []
 
+    COMMON_SKILLS = [
+        "python", "java", "c++", "c#", "javascript", "typescript", "go", "ruby", "php", "swift", "kotlin",
+        "sql", "nosql", "mongodb", "postgresql", "mysql", "aws", "azure", "gcp", "docker", "kubernetes",
+        "linux", "django", "flask", "react", "angular", "vue", "node", "rest", "graphql", "html", "css"
+    ]
+
+    def extract_skills_from_text(self, text: str) -> list:
+        """Extract common skills from a block of text."""
+        if not text:
+            return []
+        text_lower = text.lower()
+        found = set()
+        for skill in self.COMMON_SKILLS:
+            if skill in text_lower:
+                found.add(skill.capitalize() if skill.islower() else skill)
+        return list(found)
+
     def scrape_job_page(self, url: str, company_key: str) -> Optional[Dict]:
         """
         Scrape a single job listing page
@@ -216,6 +244,7 @@ class CompanyScraper:
             title = None
             location = None
             description = None
+            skills = []
 
             # Look for title in common locations
             title_candidates = [
@@ -250,6 +279,14 @@ class CompanyScraper:
             ]
             description = next((d.text.strip() for d in description_candidates if d), None)
 
+            # Try to extract skills from a requirements/skills section
+            skills_section = soup.find(class_=lambda x: x and "skill" in x.lower())
+            if skills_section:
+                skills = [li.text.strip() for li in skills_section.find_all("li") if li.text.strip()]
+            # Fallback: extract from description
+            if not skills and description:
+                skills = self.extract_skills_from_text(description)
+
             if not title:
                 return None
 
@@ -258,6 +295,7 @@ class CompanyScraper:
                 "company": company_info["name"],
                 "location": location,
                 "description": description,
+                "skills": skills,
                 "url": url,
                 "source": f"{company_info['name']} Career Page",
                 "scraped_at": datetime.now().isoformat()
@@ -286,13 +324,16 @@ class CompanyScraper:
                 resp.raise_for_status()
                 data = resp.json()
                 for job in data.get("content", []):
+                    desc = job.get("jobAd", {}).get("sections", {}).get("jobDescription", "")
+                    skills = self.extract_skills_from_text(desc)
                     jobs.append({
                         "title": job.get("name"),
                         "company": "Freshworks",
                         "location": job.get("location", {}).get("city"),
                         "department": job.get("department"),
                         "url": f"https://careers.smartrecruiters.com/Freshworks/{job.get('id')}",
-                        "description": job.get("jobAd", {}).get("sections", {}).get("jobDescription", ""),
+                        "description": desc,
+                        "skills": skills,
                         "source": "Freshworks SmartRecruiters API",
                         "scraped_at": datetime.now().isoformat()
                     })
@@ -306,7 +347,7 @@ class CompanyScraper:
 
     def scrape_zoho_job_page(self, url: str) -> dict:
         """
-        Scrape a Zoho job detail page for title, description, country, industry, and URL.
+        Scrape a Zoho job detail page for title, description, country, industry, skills, and URL.
         """
         try:
             self.logger.info(f"Scraping Zoho job page: {url}")
@@ -366,11 +407,20 @@ class CompanyScraper:
                         if next_val:
                             industry = next_val.strip()
 
+            # Skills
+            skills = []
+            skills_section = soup.find(class_=lambda x: x and "skill" in x.lower())
+            if skills_section:
+                skills = [li.text.strip() for li in skills_section.find_all("li") if li.text.strip()]
+            if not skills and description:
+                skills = self.extract_skills_from_text(description)
+
             return {
                 "title": title,
                 "description": description,
                 "country": country,
                 "industry": industry,
+                "skills": skills,
                 "url": url,
                 "company": "Zoho",
                 "source": "Zoho Careers",
@@ -382,7 +432,7 @@ class CompanyScraper:
 
     def scrape_cognizant_job_page(self, url: str) -> dict:
         """
-        Scrape a Cognizant job detail page for title, description, and URL.
+        Scrape a Cognizant job detail page for title, description, skills, and URL.
         """
         try:
             self.logger.info(f"Scraping Cognizant job page: {url}")
@@ -404,9 +454,17 @@ class CompanyScraper:
                 resp_tag = soup.find(string=lambda x: x and 'Responsibilities' in x)
                 if resp_tag:
                     description = resp_tag.find_parent().get_text(separator='\n').strip()
+            # Skills
+            skills = []
+            skills_section = soup.find(class_=lambda x: x and "skill" in x.lower())
+            if skills_section:
+                skills = [li.text.strip() for li in skills_section.find_all("li") if li.text.strip()]
+            if not skills and description:
+                skills = self.extract_skills_from_text(description)
             return {
                 "title": title,
                 "description": description,
+                "skills": skills,
                 "url": url,
                 "company": "Cognizant",
                 "source": "Cognizant Careers",
@@ -418,7 +476,7 @@ class CompanyScraper:
 
     def scrape_wipro_job_page(self, url: str) -> dict:
         """
-        Scrape a Wipro job detail page for title, description, location, and URL.
+        Scrape a Wipro job detail page for title, description, location, skills, and URL.
         """
         try:
             self.logger.info(f"Scraping Wipro job page: {url}")
@@ -451,10 +509,18 @@ class CompanyScraper:
                 role_purpose = soup.find(string=lambda x: x and 'Role Purpose' in x)
                 if role_purpose:
                     description = role_purpose.find_parent().get_text(separator='\n').strip()
+            # Skills
+            skills = []
+            skills_section = soup.find(class_=lambda x: x and "skill" in x.lower())
+            if skills_section:
+                skills = [li.text.strip() for li in skills_section.find_all("li") if li.text.strip()]
+            if not skills and description:
+                skills = self.extract_skills_from_text(description)
             return {
                 "title": title,
                 "location": location,
                 "description": description,
+                "skills": skills,
                 "url": url,
                 "company": "Wipro",
                 "source": "Wipro Careers",
@@ -466,7 +532,7 @@ class CompanyScraper:
 
     def scrape_ltimindtree_job_page(self, url: str) -> dict:
         """
-        Scrape an LTIMindtree job detail page for title, description, and URL.
+        Scrape an LTIMindtree job detail page for title, description, skills, and URL.
         """
         try:
             self.logger.info(f"Scraping LTIMindtree job page: {url}")
@@ -488,9 +554,17 @@ class CompanyScraper:
                 main = soup.find('main')
                 if main:
                     description = main.get_text(separator='\n').strip()
+            # Skills
+            skills = []
+            skills_section = soup.find(class_=lambda x: x and "skill" in x.lower())
+            if skills_section:
+                skills = [li.text.strip() for li in skills_section.find_all("li") if li.text.strip()]
+            if not skills and description:
+                skills = self.extract_skills_from_text(description)
             return {
                 "title": title,
                 "description": description,
+                "skills": skills,
                 "url": url,
                 "company": "LTIMindtree",
                 "source": "LTIMindtree Careers",
@@ -502,13 +576,11 @@ class CompanyScraper:
 
     def scrape_all_companies(self, keyword: str = "", location: str = "") -> Dict[str, List[Dict]]:
         """
-        Scrape jobs from all target companies
+        Scrape jobs from all target companies and filter by keyword and location
         """
         all_jobs = {}
-        
         for company_key in self.target_companies:
             self.logger.info(f"\nScraping jobs for {self.target_companies[company_key]['name']}")
-            
             if company_key == "freshworks":
                 jobs = self.scrape_freshworks_jobs(keyword=keyword, limit=10, max_pages=1)
             elif company_key == "zoho":
@@ -551,9 +623,10 @@ class CompanyScraper:
                     if job_data:
                         jobs.append(job_data)
                         self.logger.info(f"Successfully scraped job: {job_data['title']}")
+            # Filter jobs by job title and location
+            jobs = filter_jobs(jobs, job_title=keyword, location=location)
             all_jobs[company_key] = jobs
             self.logger.info(f"Found {len(jobs)} jobs for {self.target_companies[company_key]['name']}")
-        
         return all_jobs
 
 if __name__ == "__main__":

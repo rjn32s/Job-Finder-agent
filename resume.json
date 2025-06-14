@@ -1,0 +1,23 @@
+{
+  "name": "Rajan Shukla",
+  "email": "rajan@example.com",
+  "preferred_locations": ["Bangalore", "Remote"],
+  "skills": [
+    {"name": "Python", "level": "expert"},
+    {"name": "Django", "level": "advanced"},
+    {"name": "SQL", "level": "intermediate"},
+    {"name": "AWS", "level": "intermediate"}
+  ],
+  "experience_years": 3,
+  "about": "Backend engineer with a passion for scalable APIs and cloud.",
+  "projects": [
+    {
+      "title": "E-commerce API",
+      "description": "Built a scalable REST API for an e-commerce platform using Django and AWS."
+    },
+    {
+      "title": "Data Pipeline",
+      "description": "Developed a data pipeline for analytics using Python and SQL."
+    }
+  ]
+}

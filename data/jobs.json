@@ -1,450 +1,361 @@
 [
   {
-    "title": "Software Engineer",
-    "company": "ti Steps",
-    "location": "Hyderabad, Chennai, Bengaluru",
-    "date": "1 Day Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-ti-steps-hyderabad-chennai-bengaluru-0-to-2-years-130625014056"
-  },
-  {
-    "title": "Software Engineer",
-    "company": "Capgemini",
-    "location": "Bengaluru",
-    "date": "1 Day Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-capgemini-technology-services-india-limited-bengaluru-2-to-5-years-120625933240"
-  },
-  {
-    "title": "Software Engineer: Routing Protocols",
-    "company": "Cisco",
-    "location": "Bengaluru",
-    "date": "1 Day Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-routing-protocols-cisco-systems-india-private-limited-bengaluru-1-to-6-years-120625920228"
-  },
-  {
-    "title": "Software Engineer",
-    "company": "IBM",
-    "location": "Bengaluru",
-    "date": "1 Day Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-ibm-india-pvt-limited-bengaluru-1-to-4-years-120625933190"
-  },
-  {
-    "title": "Software Engineer, developer / Programmer, 2025 graduate Can also appl",
-    "company": "Creative Hands HR",
-    "location": "Hyderabad, Chennai, Bengaluru",
-    "date": "1 Day Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-developer-programmer-2025-graduate-can-also-appl-creative-hands-hr-hyderabad-chennai-bengaluru-0-to-5-years-130625014899"
-  },
-  {
-    "title": "Software Engineer And Developer",
-    "company": "Inchi Solutions",
-    "location": "Hosur, Chennai, Bengaluru",
-    "date": "4 Days Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-and-developer-inchi-solutions-hosur-chennai-bengaluru-1-to-6-years-081124006334"
-  },
-  {
-    "title": "Software Engineer",
-    "company": "Mcafee",
-    "location": "Bengaluru",
-    "date": "1 Day Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-mcafee-software-india-pvt-ltd-bengaluru-0-to-2-years-130625501237"
-  },
-  {
-    "title": "Software Engineer",
-    "company": "NetApp",
-    "location": "Bengaluru",
-    "date": "2 Days Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-netapp-bengaluru-2-to-7-years-110625504345"
-  },
-  {
-    "title": "Software Engineer",
-    "company": "ANZ",
-    "location": "Bengaluru",
-    "date": "4 Days Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-anz-banking-group-bengaluru-2-to-4-years-090625503694"
-  },
-  {
-    "title": "Software Engineer - Gen AI",
-    "company": "Wells Fargo",
-    "location": "Bengaluru",
-    "date": "2 Days Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-gen-ai-wells-fargo-international-solutions-private-ltd-bengaluru-2-to-6-years-030625926807"
-  },
-  {
-    "title": "Software Engineer",
-    "company": "NetApp",
-    "location": "Bengaluru",
-    "date": "1 Day Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-netapp-bengaluru-2-to-7-years-130625501397"
-  },
-  {
-    "title": "Software Engineer Gen AI",
-    "company": "Wells Fargo",
-    "location": "Bengaluru",
+    "title": "Machine Learning Engineer",
+    "company": "Draft N Craft Legal Outsourcing",
+    "location": "New Delhi",
     "date": "3 Days Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-gen-ai-wells-fargo-international-solutions-private-ltd-bengaluru-2-to-7-years-110625911901"
+    "url": "https://www.naukri.com/job-listings-machine-learning-engineer-draft-n-craft-legal-outsourcing-new-delhi-2-to-3-years-110625023713",
+    "skills": [
+      "Generative Ai",
+      "Retrieval Augmented Generation",
+      "Python",
+      "NoSQL",
+      "Large Language Model",
+      "Data Extraction",
+      "Machine Learning",
+      "SQL"
+    ],
+    "description": "<br /><p> </p><p>Role Overview: </p><p><br />As an ML Engineer you will embark on a wonderful journey of developing and implementing various Machine Learning models that will ultimately act as an enabler in the companys growth. </p><p>Since Draft Craft is a legal services-oriented company in which we serve clients from across the border, your work will be majorly aimed towards creating ML workflows that will serve the legal industry and help improve efficiency of the in-house teams. Draft n Craft offers you the perfect opportunity to grow and hone your ML/Data Engineering skills while contributing towards building a worthwhile product. </p><br /><p>Key Responsibilities: </p><ul><li>Developing data ingestion & data preprocessing pipelines for transforming data presented for legal requirements to extract key and actionable insights.  </li><li>Data cleaning for supplying accurate, consistent & relevant content to ML models. </li><li>Exploring and experimenting with different ML models and architectures that can be used with data from the legal industry in a safe and compliant manner. </li><li>Developing and deploying ML models that can function in production environments for the use-cases required by the company. </li><li>Analyzing key metrics for model performance and devising methods to improve efficiencies of the models. </li><li>Document the steps involved in data preprocessing, model development, and optimizations undertaken. </li><li>Explore techniques for feature extraction, transformation, and selection to improve model performance. </li><li>Understanding software development related terminologies to collaborate with the existing team of software engineers within the company. </li><li>Devise methods of integration of the ML models within the company’s already developed software solutions and employee workflows. </li></ul><br /><p>Required Qualifications: </p><ul><li>Degree holder from Computer Science Engineering, Data Science or related fields. </li><li>Minimum experience of 2 years working as an ML engineer or Data Scientist in a professional capacity. </li><li>Strong programming skills including python and familiarity with related libraries Tensorflow, PyTorch, Pandas etc. </li><li>Database Querying in terms of SQL/NoSQL. </li><li>Working with data extracting and ETL pipelines for pre-processing of data/documents. </li><li>Relevant experience working in NLP, Neural Networks, and Gen AI technologies. </li><li>Familiarity with working or applying transfer-learning on LLM models like Llama, etc. </li><li>Some experience in software development is preferred. </li><li>Knowledge of deploying ML models and data pipelines to cloud services like AWS/Azure. </li></ul><br />"
   },
   {
-    "title": "Software Engineer",
-    "company": "Trellix",
-    "location": "Bengaluru",
-    "date": "3 Days Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-trellix-bengaluru-2-to-4-years-100625501583"
+    "title": "Artificial Intelligence And Machine Learning Engineer",
+    "company": "Image Infosystems",
+    "location": "New Delhi(Kalkaji), Delhi / NCR",
+    "date": "28 Days Ago",
+    "url": "https://www.naukri.com/job-listings-artificial-intelligence-and-machine-learning-engineer-image-infosystems-new-delhi-delhi-ncr-0-to-3-years-170525017148",
+    "skills": [
+      "Postgresql",
+      "Machine Learning",
+      "Deep Learning",
+      "Python",
+      "Tensorflow",
+      "Data Mining",
+      "Statistics",
+      "Data"
+    ],
+    "description": "Preferred candidate profile . <br><br>Should have knowledge in Python,Tensor Flow,Keras and GPU Training"
   },
   {
-    "title": "Software Engineer",
-    "company": "ANZ",
-    "location": "Bengaluru",
-    "date": "3 Days Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-anz-banking-group-bengaluru-1-to-6-years-100625503231"
+    "title": "Machine Learning  Ops Engineer",
+    "company": "Quadrangle",
+    "location": "Delhi / NCR, Pune, Bengaluru",
+    "date": "1 Day Ago",
+    "url": "https://www.naukri.com/job-listings-machine-learning-ops-engineer-quadrangle-pune-bengaluru-delhi-ncr-6-to-11-years-120625033954",
+    "skills": [
+      "MLOPS",
+      "ML operations",
+      "ML ops",
+      "Ml",
+      "Machine learning",
+      "Operations",
+      "Machine",
+      "Ops"
+    ],
+    "description": "<p>  </p><p><strong>Location:</strong> Bangalore/Noida/Pune/Gurgaon</p><p><strong>Education:</strong> B.E. / B. Tech / M.E. / M. Tech / MCA</p><p><strong>Job Responsibilities:</strong></p><ol type=\"1\"><li><strong>Model Deployment and      Management:</strong></li><ul><li>Drive ML prototypes into       production ensuring seamless deployment and management on cloud at scale.</li><li>Monitor real-time performance       of deployed models, analyze data, and proactively address performance       issues.</li><li>Troubleshoot and resolve       production issues related to ML model deployment, performance, and       scalability.</li></ul><li><strong>Collaboration and Integration:</strong></li><ul><li>Collaborate with DevOps       engineers to manage cloud compute resources for ML model deployment and       performance optimization.</li><li>Work closely with ML       scientists, software engineers, data engineers, and other stakeholders to       implement best practices for MLOps, including CI/CD pipelines, version       control, model versioning, and automated deployment.</li></ul><li><strong>Innovation and Continuous      Improvement:</strong></li><ul><li>Stay updated with the latest       advancements in MLOps technologies and recommend new tools and       techniques.</li><li>Contribute to the continuous       improvement of team processes and workflows.</li><li>Share knowledge and expertise       to promote a collaborative learning environment.</li></ul><li><strong>Development and Documentation:</strong></li><ul><li>Build software to run and       support machine-learning models.</li><li>Develop and maintain       documentation, standard operating procedures, and guidelines related to       MLOps processes.</li><li>Participate in fast iteration       cycles and adapt to evolving project requirements.</li></ul><li><strong>Business Solutions and      Strategy:</strong></li><ul><li>Propose solutions and       strategies to business challenges.</li><li>Collaborate with Data Science       team, Front End Developers, DBA, and DevOps teams to shape architecture       and detailed designs.</li></ul><li><strong>Mentorship:</strong></li><ul><li>Conduct code reviews and       mentor junior team members.</li><li>Foster strong interpersonal skills,       excellent communication skills, and collaboration skills within the team.</li></ul></ol><p><strong>Mandatory Skills:</strong></p><ul><li><strong>Programming Languages:</strong> Proficiency in Python (3.x)      and SQL.</li><li><strong>ML Frameworks and Libraries:</strong> Extensive knowledge of ML      frameworks, libraries, data structures, data modeling, and software      architecture.</li><li><strong>Databases:</strong> Proficiency in SQL and NoSQL      databases.</li><li><strong>Mathematics and Algorithms:</strong> In-depth knowledge of      mathematics, statistics, and algorithms.</li><li><strong>ML Modules and REST API:</strong> Proficient with ML modules and      REST API.</li><li><strong>Version Control:</strong> Hands-on experience with      version control applications (GIT).</li><li><strong>Model Deployment and      Monitoring:</strong>      Experience with model deployment and monitoring.</li><li><strong>Data Processing:</strong> Ability to turn unstructured      data into useful information (e.g., auto-tagging images, text-to-speech      conversions).</li><li><strong>Problem-Solving:</strong> Analytically agile with strong      problem-solving capabilities.</li><li><strong>Learning Agility:</strong> Quick to learn new concepts      and eager to explore and build new features.</li></ul><p><strong>Qualifications:</strong></p><ul><li><strong>Education:</strong> Bachelors or Master’s degree      in Computer Science, Data Science, or a related field.</li><li><strong>Experience:</strong> Minimum of 6 years of hands-on      experience in MLOps, deploying and managing machine learning models in      production environments, preferably in cloud-based environments.<strong>Role & responsibilities</strong> </li></ul><br /><br /><p><strong>Preferred candidate profile</strong> </p><br /><br />"
   },
   {
-    "title": "Software Engineer- Sredit analysis, Underwriting",
-    "company": "Wells Fargo",
-    "location": "Bengaluru",
+    "title": "Machine Learning R&D Engineer",
+    "company": "Welocalize",
+    "location": "Hybrid - Noida",
+    "date": "9 Days Ago",
+    "url": "https://www.naukri.com/job-listings-machine-learning-r-d-engineer-welocalize-noida-6-to-10-years-040625031454",
+    "skills": [
+      "Cloud Deployment",
+      "Natural Language Processing",
+      "Machine Learning",
+      "Coding",
+      "Python",
+      "Java",
+      "C++",
+      "Artificial Intelligence"
+    ],
+    "description": "Education and Experience . Bachelors degree in Computer Science,AI / ML,or related field (Master s / PhD preferred)<br><br>Leadership and mentorship experience,with excellent communication skills<br><br>Experience taking ownership of projects from conception to deployment<br><br>6+ years of experience in AI / ML research and development<br><br>Hands-on experience in NLP"
+  },
+  {
+    "title": "Data Scientist Machine Learning Modeling",
+    "company": "EXL",
+    "location": "Gurugram, Bengaluru",
+    "date": "14 Days Ago",
+    "url": "https://www.naukri.com/job-listings-data-scientist-machine-learning-modeling-exl-gurugram-bengaluru-4-to-9-years-300525037843",
+    "skills": [
+      "Model Building",
+      "Model Development",
+      "SQL",
+      "Machine Learning Algorithms",
+      "Python",
+      "Decision Tree",
+      "Credit Risk Modelling",
+      "fraud model building"
+    ],
+    "description": "The ideal candidate will have hands-on experience developing and deploying models using ensemble methods and other cutting-edge ML algorithms,mostly in the US banking domain"
+  },
+  {
+    "title": "Machine Learning Engineer 2",
+    "company": "Adobe",
+    "location": "Noida",
     "date": "2 Days Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-sredit-analysis-underwriting-wells-fargo-international-solutions-private-ltd-bengaluru-2-to-7-years-030625929304"
+    "url": "https://www.naukri.com/job-listings-machine-learning-engineer-2-adobe-systems-india-pvt-ltd-noida-4-to-7-years-110625504397",
+    "skills": [
+      "Computer vision",
+      "deep learning",
+      "data science",
+      "Machine learning",
+      "Research",
+      "Adobe",
+      "Software solutions",
+      "Python"
+    ],
+    "description": "Build experiments,algorithms and ship solution that not only yield high accuracy but are also crafted and engineered to scale<br><br>Collaborate across multiple research and engineering teams,making the tradeoffs required to rapidly deliver AI / ML software solutions<br><br>Driven,Energetic and a team player are must haves"
   },
   {
-    "title": "Software Engineer - Gen AI",
-    "company": "Randstad",
-    "location": "Hybrid - Bengaluru",
-    "date": "5 Days Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-gen-ai-randstad-bengaluru-1-to-2-years-080625002938"
+    "title": "Machine Learning Engineer",
+    "company": "Whats On India Media",
+    "location": "Hybrid - Mumbai, Gurugram, Bengaluru",
+    "date": "3 Days Ago",
+    "url": "https://www.naukri.com/job-listings-machine-learning-engineer-whats-on-india-media-mumbai-gurugram-bengaluru-3-to-8-years-110724000108",
+    "skills": [
+      "Machine Learning",
+      "Ml Algorithms",
+      "Python",
+      "Pytorch",
+      "Machine",
+      "Algorithms",
+      "Ml"
+    ],
+    "description": "<p>Nielsen is seeking an organized, detail oriented, team player, to join the Engineering team in the role of Software Machine Learning Engineer. Nielsen's Audience Measurement Engineering platforms support the measurement of television viewing in more than 30 countries around the world. The Software Engineer will be responsible to define, develop, test, analyze, and deliver technology solutions within Nielsen's Collections platforms. </p><p><strong>Required Skills</strong></p><ul><li>Bachelor's degree in Computer Science or equivalent degree.</li><li>3+ years of software experience </li><li>Experience with Machine learning frameworks and models. Pytorch experience preferred</li><li>Strong understanding of statistical analysis and mathematical data manipulation</li><li>Work with web technology including Java, Python, JavaScript, React/Redux, Kotlin.</li><li>Follow best practices for software development and deployment</li><li>Understanding of relational database, big data, and experience in SQL</li><li>Proficient at using GIT, GitFlow, JIRA, Gitlab and Confluence.</li><li>Strong analytical and problem solving skills.</li><li>Open-minded and passionate to learn and grow technology skills</li><li>Strong sense of accountability</li><li>Solution-focused and ability to drive change within the organization</li><li>Experience in writing unit/integration tests including test automation.</li><li>Strong testing and debugging abilities, functional, analytical and technical abilities, ability to find bugs, attention to detail, troubleshooting</li></ul><p><strong>Additional Useful Skills</strong></p><ul><li>A fundamental understanding of the AWS ecosystem (EC2, S3, EMR, Lambda, etc) </li><li>Experienced in building RESTful APIs.</li><li>Experience in writing unit/integration tests including test automation.</li></ul><br />"
   },
   {
-    "title": "Software Engineer",
-    "company": "ANZ",
-    "location": "Bengaluru",
+    "title": "Artificial Intelligence / Machine Learning Engineer",
+    "company": "Maruti True Value",
+    "location": "Gurugram",
+    "date": "14 Days Ago",
+    "url": "https://www.naukri.com/job-listings-artificial-intelligence-machine-learning-engineer-maruti-true-value-gurugram-1-to-6-years-310525500340",
+    "skills": [
+      "deep learning",
+      "Data modeling",
+      "GCP",
+      "Artificial Intelligence",
+      "Machine learning",
+      "Cloud",
+      "Agile",
+      "Data structures"
+    ],
+    "description": "Collaborate with software engineers to integrate Generative AI models into production systems . Should be able evaluate the application cases and problem-solving potential of AI / ML algorithms and rank them according to success likelihood"
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Soul Ai",
+    "location": "Delhi / NCR, Mumbai, Bengaluru",
+    "date": "12 Days Ago",
+    "url": "https://www.naukri.com/job-listings-machine-learning-engineer-soul-ai-mumbai-delhi-ncr-bengaluru-4-to-8-years-020625903802",
+    "skills": [
+      "Machine Learning",
+      "Kubeflow",
+      "deep learning",
+      "PyTorch",
+      "Docker",
+      "Kafka",
+      "MLflow",
+      "Spark"
+    ],
+    "description": "Experience with A / B testing,Bayesian optimization,and hyperparameter tuning."
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Adobe",
+    "location": "Noida, Bengaluru",
+    "date": "11 Days Ago",
+    "url": "https://www.naukri.com/job-listings-machine-learning-engineer-adobe-systems-india-pvt-ltd-noida-bengaluru-14-to-19-years-030625502957",
+    "skills": [
+      "Unix",
+      "Computer science",
+      "Computer vision",
+      "Version control",
+      "GIT",
+      "Machine learning",
+      "Data processing",
+      "Adobe"
+    ],
+    "description": "Develop ML models and services,collaborate with teams,improve user experience at Adobe Express. What Youll Do . Research,design,and implement advanced ML models and pipelines for training and inference at scale,including techniques in computer vision,NLP,deep learning,and generative AI<br><br> 14+years of industry experience"
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Adobe",
+    "location": "Noida",
+    "date": "11 Days Ago",
+    "url": "https://www.naukri.com/job-listings-machine-learning-engineer-adobe-systems-india-pvt-ltd-noida-10-to-15-years-030625501971",
+    "skills": [
+      "Product management",
+      "Computer science",
+      "Bidding",
+      "GIT",
+      "Machine learning",
+      "Data structures",
+      "Adobe",
+      "Data mining"
+    ],
+    "description": "A total of 10+ years of experience,including at least 5 years in technical roles involving Data Science,Machine Learning,or Statistics. Masters or BTech in Computer Science/ Statistics <br><br> Proficient in one or more: Python,Java / Scala,SQL,Hive,Spark <br><br>Proven management experience with highly diverse and global teams. ."
+  },
+  {
+    "title": "Opening For Senior Machine Learning Engineer with Fareportal",
+    "company": "Fareportal",
+    "location": "Hybrid - Gurugram",
+    "date": "3 Days Ago",
+    "url": "https://www.naukri.com/job-listings-opening-for-senior-machine-learning-engineer-with-fareportal-fareportal-gurugram-2-to-5-years-030225015644",
+    "skills": [
+      "Containerization",
+      "Machine Learning",
+      "Python",
+      "azure",
+      "sql",
+      "api",
+      "nosql",
+      "deployment"
+    ],
+    "description": "Proficient in SQL querying for data extraction and manipulation<br><br> Bachelors in computer science,or a related field<br><br> a Masters degree is a plus.  . Good-to-Haves:  - Experience working with distributed data processing frameworks like PySpark<br><br> Prior experience with A / B testing methodologies"
+  },
+  {
+    "title": "Sr Machine Learning Engineer (Applied Researcher)",
+    "company": "Adobe",
+    "location": "Noida, Bengaluru",
+    "date": "7 Days Ago",
+    "url": "https://www.naukri.com/job-listings-sr-machine-learning-engineer-applied-researcher-adobe-systems-india-pvt-ltd-noida-bengaluru-2-to-6-years-060625503859",
+    "skills": [
+      "Unix",
+      "Computer vision",
+      "Version control",
+      "GIT",
+      "Machine learning",
+      "Data processing",
+      "Adobe",
+      "Monitoring"
+    ],
+    "description": "Basic Qualifications:  . PhD or masters or Bachelors or equivalent experience in Computer Science,ML,Applied Mathematics,Data Science,or a related technical field<br><br>Experience in developing and deploying RESTful web services and microservices architectures for applications involving ML<br><br>Develop ML models and services,collaborate with teams,improve user experience at Adobe Express"
+  },
+  {
+    "title": "Senior Machine Learning Engineer",
+    "company": "Multi Recruit",
+    "location": "Gurugram",
     "date": "4 Days Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-anz-banking-group-bengaluru-2-to-7-years-090625503695"
+    "url": "https://www.naukri.com/job-listings-senior-machine-learning-engineer-multi-recruit-gurugram-5-to-10-years-100625021659",
+    "skills": [
+      "Azure",
+      "Generative AI",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Python",
+      "Microsoft Azure",
+      "Machine",
+      "Intelligence"
+    ],
+    "description": "<p> We are seeking a highly skilled <strong>Senior Machine Learning Engineer</strong> to join our dynamic team. The ideal candidate will have a deep understanding of Machine Learning, AI, and cloud platforms like Azure. You will play a key role in designing, developing, and deploying ML models and Generative AI solutions to solve complex business problems. </p><br /><p><u><strong>Role overview</strong></u></p><ul><li>Engineering Masters degree or PhD in Data Science, Statistics, Mathematics, or related fields</li><li>5 years+ experience in a Machine Learning Engineer role into large corporate organizations</li><li>Experience of working with ML models in a cloud ecosystem.</li></ul><p><u><strong>Statistics & amp; Machine Learning</strong></u></p><ul><li><strong>Statistics</strong>: Strong understanding of statistical analysis and modelling techniques (e.g., regression analysis, hypothesis testing, time series analysis)</li><li><strong>Classical ML</strong>: Very strong knowledge in classical ML algorithms for regression & classification, supervised and unsupervised machine learning, both theoretical and practical (e.g. using scikit-learn, xgboost)</li><li><strong>ML niche</strong>: Expertise in at least one of the following ML specialisations: Timeseries forecasting / Natural Language Processing / Computer Vision</li><li><strong>Deep Learning:</strong> Good knowledge of Deep Learning fundamentals (CNN, RNN, transformer architecture, attention mechanism, ) and one of the deep learning frameworks (pytorch, tensorflow, keras)</li><li><strong>Generative A</strong>I: Good understanding of Generative AI specificities and previous experience in working with Large Language Models is a plus (e.g. with openai, langchain).</li></ul><p><u><strong>MLOps</strong></u></p><ul><li><strong>Model strategy</strong>: Expertise in designing, implementing, and testing machine learning strategies.</li><li><strong>Model integration</strong>: Very strong skills in integrating a machine learning algorithm in a data science application in production.</li><li><strong>Model performance</strong>: Deep understanding of model performance evaluation metrics and existing libraries (e.g., scikit-learn, evidently)</li><li><strong>Model deployment:</strong> Experience in deploying and managing machine learning models in production either using specific cloud platform, model serving frameworks, or containerization.</li><li><strong>Model monitoring</strong>: Experience with model performance monitoring tools is a plus (Grafana, Prometheus).</li></ul><p><u><strong>Software Engineering</strong></u></p><ul><li><strong>Python:</strong> Very strong coding skills in Python including modularity, OOP, data & config manipulation frameworks (e.g., pandas, pydantic) etc.</li><li><strong>Python ecosystem</strong>: Strong knowledge of tooling in Python ecosystem such as dependency management tooling (venv, poetry), documentation frameworks (e.g. sphinx, mkdocs, jupyter-book), testing frameworks (unittest,pytest)</li><li><strong>Software engineering practices:</strong> Experience in putting in place good software engineering practices such as design patterns, testing (unit, integration), clean code, code formatting etc.</li><li><strong>Debugging:</strong> Ability to troubleshoot and debug issues within machine learning pipelines.</li></ul><p><u><strong>Data Science Experimentation and Analytics</strong></u></p><ul><li><strong>Data Visualization:</strong> Knowledge of data visualization tools such as plotly, seaborn, matplotlib, etc. to visualise, interpret and communicate the results of machine learning models to stakeholders. Basic knowledge of PowerBI is a plus.</li><li><strong>Data Cleaning:</strong> Experience with data cleaning and preprocessing techniques such as feature scaling, dimensionality reduction, and outlier detection (e.g. with pandas, scikit-learn).</li><li><strong>Data Science Experiments:</strong> Understanding of experimental design and A/B testing methodologies.</li></ul><p><u><strong>Data Processing:</strong></u></p><ul><li><strong>Databricks/Spark:</strong> Basic knowledge of PySpark for big data processing</li><li><strong>Databases</strong>: Basic knowledge of SQL to query data in internal systems</li><li><strong>Data Formats:</strong> Familiarity with different data storage formats such as Parquet and Delta.</li></ul><p><u><strong>DevOps</strong></u></p><ul><li><strong>Azure DevOps</strong>: Experience using a DevOps platform such as Azure DevOps for using Boards, Repositories, Pipelines</li><li><strong>Git</strong>: Experience working with code versioning (git), branch strategies, and collaborative work with pull requests. Proficient with the most basic git commands.</li><li><strong>CI / CD</strong>: Experience in implementing/maintaining pipelines for continuous integration (including execution of testing strategy) and continuous deployment is preferable.</li></ul><p><u><strong>Cloud Platform:</strong></u></p><ul><li><strong>Azure Cloud:</strong> Previous experience with services like Azure Machine Learning Services and/or Azure Databricks on Azure is preferable.</li></ul><p><u><strong>Soft skills:</strong></u></p><ul><li>Strong analytical and problem-solving skills, with attention to detail</li><li>Excellent verbal and written communication and pedagogical skills with technical and non-technical teams</li><li>Excellent teamwork and collaboration skills</li><li>Adaptability and reactivity to new technologies, tools, and techniques</li><li>Fluent in English.</li></ul><p><u><strong>What would you do here:</strong></u></p><ul><li>Managing the lifecycle of machine learning models</li><li>Develop and implement machine learning models to solve complex business problems.</li><li>Ensure that models are accurate, efficient, reliable, and scalable.</li><li>Deploy machine learning models to production environments, ensuring that models are integrated with software systems.</li><li>Monitor machine learning models in production, ensuring that models are performing as expected and that any errors or performance issues are identified and resolved quickly.</li><li>Maintain machine learning models over time. This includes updating models as new data becomes available, retraining models to improve performance, and retiring models that are no longer effective.</li><li>Develop and implement policies and procedures for ensuring the ethical and responsible use of machine learning models. This includes addressing issues related to bias, fairness, transparency, and accountability.</li></ul><p><u><strong>Continuous Improvements:</strong></u></p><ul><li>Stay up to date with the latest developments in the field: read research papers, attend conferences, and participate in trainings to expand their knowledge and skills.</li><li>Identify and evaluate new technologies and tools that can improve the efficiency and effectiveness of machine learning projects.</li><li>Propose and implement optimizations for current machine learning workflows and systems.</li><li>Proactively identify areas of improvement within the pipelines.</li><li>Make sure that created code is compliant with our set of engineering standards.</li><li>Collaboration with other data experts (Data Engineers, Platform Engineers, and Data Analysts)</li><li>Participate to pull requests reviews coming from other team members.</li><li>Ask for review and comments when submitting their own work.</li><li>Actively participate to the day-to-day life of the project (Agile rituals), the data science team (DS meeting) and the rest of the Global Engineering team.</li></ul><br /><br /><br /><br />"
   },
   {
-    "title": "Software Engineer (Connectors)",
-    "company": "Workato",
-    "location": "Bengaluru",
+    "title": "Machine Learning Engineer - Python / Tensorflow",
+    "company": "Vayuz Technologies",
+    "location": "Delhi / NCR",
     "date": "1 Day Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-connectors-workato-bengaluru-2-to-6-years-130625502971"
+    "url": "https://www.naukri.com/job-listings-machine-learning-engineer-python-tensorflow-vayuz-technologies-delhi-ncr-4-to-5-years-120625935280",
+    "skills": [
+      "Machine Learning",
+      "Tensorflow",
+      "MLOps",
+      "Big Data",
+      "Neural Networks",
+      "Scikit-Learn",
+      "Deep Learning",
+      "Python"
+    ],
+    "description": "Preferred Qualifications :  . - Experience with Big Data technologies (Hadoop,Spark,etc.). <br><br> . - Familiarity with containerization and orchestration tools (Docker,Kubernetes).  . - Experience in automating ML pipelines with MLOps practices.  . - Experience in model deployment using cloud platforms (AWS,GCP,Azure) or MLOps tools"
   },
   {
-    "title": "Software Engineer / Jetpac / Gurgaon",
-    "company": "Circles",
-    "location": "Kolkata, Mumbai, New Delhi, Hyderabad, Pune, Chennai, Bengaluru",
+    "title": "Senior Machine Learning Engineer",
+    "company": "Intellias",
+    "location": "New Delhi, Kolkata, Mumbai, Hyderabad, Pune, Chennai, Bengaluru",
+    "date": "7 Days Ago",
+    "url": "https://www.naukri.com/job-listings-senior-machine-learning-engineer-intellias-kolkata-mumbai-new-delhi-hyderabad-pune-chennai-bengaluru-3-to-7-years-060625502751",
+    "skills": [
+      "Product management",
+      "Computer science",
+      "Computer vision",
+      "data science",
+      "GCP",
+      "Diversity and Inclusion",
+      "Machine learning",
+      "Manager Technology"
+    ],
+    "description": "Excellent communication skills to effectively convey complex technical concepts to both technical and non-technical stakeholders. Nice to have:  . GCP Professional Machine Learning Engineer certification (not older than a year.)<br><br> Strong experience in Computer Vision,NLP,Generative AI demonstrated through relevant projects or research"
+  },
+  {
+    "title": "Senior Machine Learning Engineer",
+    "company": "Bebo Technologies",
+    "location": "Hybrid - Delhi / NCR, Chandigarh, Pune",
+    "date": "2 Days Ago",
+    "url": "https://www.naukri.com/job-listings-senior-machine-learning-engineer-bebo-technologies-chandigarh-pune-delhi-ncr-3-to-8-years-011024015891",
+    "skills": [
+      "Tensorflow",
+      "Machine Learning",
+      "Pytorch",
+      "Keras",
+      "Scikit-Learn",
+      "Python",
+      "Machine",
+      "Senior"
+    ],
+    "description": "3+ years of experience in software engineering and ML development<br><br>Strong proficiency in Python and ML libraries such as Scikit-learn,TensorFlow,or PyTorch<br><br>Experience with cloud platforms (AWS,GCP,Azure) and managed ML services<br><br>Experience building and evaluating models,along with data preprocessing and feature engineering"
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Catalyst Clinical Research",
+    "location": "New Delhi, Kolkata, Mumbai, Hyderabad, Pune, Chennai, Bengaluru",
+    "date": "4 Days Ago",
+    "url": "https://www.naukri.com/job-listings-machine-learning-engineer-catalyst-clinical-research-kolkata-mumbai-new-delhi-hyderabad-pune-chennai-bengaluru-5-to-10-years-090625504513",
+    "skills": [
+      "Computer science",
+      "CRO",
+      "Project management",
+      "Pharma",
+      "Clinical trials",
+      "Clinical research",
+      "Data processing",
+      "Workflow"
+    ],
+    "description": " . 5+ years of experience with cloud computing technologies (Azure,AWS,GCP),especially AI and ML services<br><br>Experience collaborating with DevOps and MLOps teams to ensure scalability and reliability of AI solutions<br><br>or MS Computer Science,Engineering,Economics,Mathematics,related field,or relevant experience"
+  },
+  {
+    "title": "Machine Learning Engineer (Full Stack)",
+    "company": "Hubnex",
+    "location": "Gurugram",
+    "date": "3 Days Ago",
+    "url": "https://www.naukri.com/job-listings-machine-learning-engineer-full-stack-hubnex-gurugram-5-to-10-years-110625501219",
+    "skills": [
+      "Product engineering",
+      "Backend",
+      "Linux",
+      "Product innovation",
+      "Consulting",
+      "Machine learning",
+      "Web development",
+      "MongoDB"
+    ],
+    "description": "Type: Full-Time <br><br> 5+ Years Experience <br><br> AI & Product Engineering . Hubnex Labs is seeking a highly skilled Machine Learning Engineer with strong capabilities in Full Stack Development to lead the development and deployment of production-grade AI systems<br><br>Experience deploying models using REST APIs,Flask / FastAPI,Docker,etc"
+  },
+  {
+    "title": "Senior Machine Learning Lead - LLM",
+    "company": "Avalara India",
+    "location": "New Delhi, Kolkata, Mumbai, Hyderabad, Pune, Chennai, Bengaluru",
     "date": "1 Day Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-jetpac-gurgaon-circles-kolkata-mumbai-new-delhi-hyderabad-pune-chennai-bengaluru-1-to-4-years-130625502394"
-  },
-  {
-    "title": "Software Engineer",
-    "company": "Careernet",
-    "location": "Hybrid - Bengaluru",
-    "date": "8 Days Ago",
-    "url": "https://www.naukri.com/job-listings-software-engineer-careernet-bengaluru-2-to-4-years-060625010134"
-  },
-  {
-    "title": "Revolutionize the FinTech space with groundbreaking solutions",
-    "company": "Razorpay",
-    "location": null,
-    "date": "2025-06-14T11:36:43.569840",
-    "url": "https://razorpay.com/jobs/"
-  },
-  {
-    "title": "COMPANY",
-    "company": "Razorpay",
-    "location": null,
-    "date": "2025-06-14T11:36:45.761480",
-    "url": "https://razorpay.com/jobs/jobs-all/detail/?gh_jid=4298205005"
-  },
-  {
-    "title": "COMPANY",
-    "company": "Razorpay",
-    "location": null,
-    "date": "2025-06-14T11:36:49.502890",
-    "url": "https://razorpay.com/jobs/jobs-all/detail/?gh_jid=4343107005"
-  },
-  {
-    "title": "Growth Ahead! Move without Caution!",
-    "company": "Razorpay",
-    "location": null,
-    "date": "2025-06-14T11:36:52.807130",
-    "url": "https://razorpay.com/jobs/jobs-all/"
-  },
-  {
-    "title": "Growth Ahead! Move without Caution!",
-    "company": "Razorpay",
-    "location": null,
-    "date": "2025-06-14T11:36:54.958395",
-    "url": "https://razorpay.com/jobs/jobs-all/?location=Bangalore&department=creators"
-  },
-  {
-    "title": "Staff - Data Analytics",
-    "company": "Freshworks",
-    "location": "Chennai",
-    "date": "2025-06-14T11:36:56.455425",
-    "url": "https://careers.smartrecruiters.com/Freshworks/744000065061448"
-  },
-  {
-    "title": "Associate Program Manager",
-    "company": "Freshworks",
-    "location": "Chennai",
-    "date": "2025-06-14T11:36:56.455435",
-    "url": "https://careers.smartrecruiters.com/Freshworks/744000065007145"
-  },
-  {
-    "title": "Channel Account Manager - Germany",
-    "company": "Freshworks",
-    "location": "Office in Berlin (but flexible on location)",
-    "date": "2025-06-14T11:36:56.455438",
-    "url": "https://careers.smartrecruiters.com/Freshworks/744000064990075"
-  },
-  {
-    "title": "Lead - Brand Marketing",
-    "company": "Freshworks",
-    "location": "Bengaluru",
-    "date": "2025-06-14T11:36:56.455439",
-    "url": "https://careers.smartrecruiters.com/Freshworks/744000064980301"
-  },
-  {
-    "title": "Lead - Process and Program Excellence",
-    "company": "Freshworks",
-    "location": "Bellevue",
-    "date": "2025-06-14T11:36:56.455441",
-    "url": "https://careers.smartrecruiters.com/Freshworks/744000064845900"
-  },
-  {
-    "title": "Sr. Analyst - GTM Systems",
-    "company": "Freshworks",
-    "location": "San Mateo",
-    "date": "2025-06-14T11:36:56.455442",
-    "url": "https://careers.smartrecruiters.com/Freshworks/744000064828040"
-  },
-  {
-    "title": "Lead - Data Platform Engineering",
-    "company": "Freshworks",
-    "location": "Chennai",
-    "date": "2025-06-14T11:36:56.455444",
-    "url": "https://careers.smartrecruiters.com/Freshworks/744000064785266"
-  },
-  {
-    "title": "Lead - Data Platform Engineering",
-    "company": "Freshworks",
-    "location": "Chennai",
-    "date": "2025-06-14T11:36:56.455449",
-    "url": "https://careers.smartrecruiters.com/Freshworks/744000064732785"
-  },
-  {
-    "title": "Lead - Technical Program Manager",
-    "company": "Freshworks",
-    "location": "Chennai",
-    "date": "2025-06-14T11:36:56.455451",
-    "url": "https://careers.smartrecruiters.com/Freshworks/744000064507576"
-  },
-  {
-    "title": "Manager - Solution Engineering",
-    "company": "Freshworks",
-    "location": "Chennai",
-    "date": "2025-06-14T11:36:56.455453",
-    "url": "https://careers.smartrecruiters.com/Freshworks/744000064482677"
-  },
-  {
-    "title": "",
-    "company": "Zoho",
-    "location": "",
-    "date": "2025-06-14T11:36:58.015743",
-    "url": "https://www.zoho.com/careers/jobdetails/?job_id=2803000614929688"
-  },
-  {
-    "title": "",
-    "company": "Zoho",
-    "location": "",
-    "date": "2025-06-14T11:36:58.084106",
-    "url": "https://www.zoho.com/careers/jobdetails/?job_id=2803000614913581"
-  },
-  {
-    "title": "",
-    "company": "Wipro",
-    "location": "",
-    "date": "2025-06-14T11:37:02.617232",
-    "url": "https://careers.wipro.com/job/Bengaluru-Lab45-AI-ML-Engineer/1147443355/"
-  },
-  {
-    "title": "",
-    "company": "Wipro",
-    "location": "",
-    "date": "2025-06-14T11:37:03.316419",
-    "url": "https://careers.wipro.com/job/Bengaluru-Software-Engineer-L3/1152849355/"
-  },
-  {
-    "title": "",
-    "company": "Wipro",
-    "location": "",
-    "date": "2025-06-14T11:37:04.005517",
-    "url": "https://careers.wipro.com/job/Bengaluru-Test-Engineer-L1-560035/1159505255/"
-  },
-  {
-    "title": "",
-    "company": "Wipro",
-    "location": "",
-    "date": "2025-06-14T11:37:04.696000",
-    "url": "https://careers.wipro.com/job/Bengaluru-Lab45-AI-ML-Engineer/1139992355/"
-  },
-  {
-    "title": "",
-    "company": "Wipro",
-    "location": "",
-    "date": "2025-06-14T11:37:05.428735",
-    "url": "https://careers.wipro.com/job/Bengaluru-System-Engineer-L4/1145169455/"
-  },
-  {
-    "title": "",
-    "company": "Wipro",
-    "location": "",
-    "date": "2025-06-14T11:37:06.115749",
-    "url": "https://careers.wipro.com/job/Chennai-Tools-Consultant-L1-0/1155886355/"
-  },
-  {
-    "title": "",
-    "company": "Wipro",
-    "location": "",
-    "date": "2025-06-14T11:37:06.805032",
-    "url": "https://careers.wipro.com/job/Bengaluru-CRM-Developer%28Contract%29/1142299655/"
-  },
-  {
-    "title": "",
-    "company": "Wipro",
-    "location": "",
-    "date": "2025-06-14T11:37:07.489236",
-    "url": "https://careers.wipro.com/job/Bengaluru-DevOps-Engineer-L4/1163060455/"
-  },
-  {
-    "title": "",
-    "company": "Wipro",
-    "location": "",
-    "date": "2025-06-14T11:37:08.160508",
-    "url": "https://careers.wipro.com/job/Bengaluru-Developer-Python/1139975355/"
-  },
-  {
-    "title": "Careers",
-    "company": "LTIMindtree",
-    "location": "",
-    "date": "2025-06-14T11:37:12.877325",
-    "url": "https://www.ltimindtree.com/careers/"
-  },
-  {
-    "title": "Senior Software Engineer",
-    "company": "LTIMindtree",
-    "location": "",
-    "date": "2025-06-14T11:37:14.473888",
-    "url": "https://careers.ltimindtree.com/job/Bengaluru-Senior-Software-Engineer/679605001/"
-  },
-  {
-    "title": "Internships",
-    "company": "Infosys",
-    "location": null,
-    "date": "2025-06-14T11:37:18.342453",
-    "url": "https://www.infosys.com/careers/internships.html"
-  },
-  {
-    "title": "Explore Openings",
-    "company": "Infosys",
-    "location": null,
-    "date": "2025-06-14T11:37:22.395558",
-    "url": "https://www.infosys.com/careers/apply.html"
-  },
-  {
-    "title": "Graduates",
-    "company": "Infosys",
-    "location": null,
-    "date": "2025-06-14T11:37:25.567260",
-    "url": "https://www.infosys.com/careers/graduates.html"
-  },
-  {
-    "title": "Meet the Coding Grandmaster of TCS CodeVita Season 12",
-    "company": "TCS",
-    "location": null,
-    "date": "2025-06-14T11:37:32.038056",
-    "url": "https://www.tcs.com/careers/india/entry-level"
-  },
-  {
-    "title": "TCS Research",
-    "company": "TCS",
-    "location": null,
-    "date": "2025-06-14T11:37:40.787909",
-    "url": "https://www.tcs.com/careers/india/research-and-innovation"
-  },
-  {
-    "title": "Take a leap forward. Rebegin with TCS.",
-    "company": "TCS",
-    "location": null,
-    "date": "2025-06-14T11:37:45.349353",
-    "url": "https://www.tcs.com/careers/india/rebegin"
-  },
-  {
-    "title": "Boost your career with TCS Salesforce",
-    "company": "TCS",
-    "location": null,
-    "date": "2025-06-14T11:37:47.724525",
-    "url": "https://www.tcs.com/careers/india/articles/salesforce-careers-tcs-jobs-opportunities"
-  },
-  {
-    "title": "Build a future you believe in",
-    "company": "TCS",
-    "location": "",
-    "date": "2025-06-14T11:37:50.227992",
-    "url": "https://www.tcs.com/careers/india"
-  },
-  {
-    "title": "Accelerate your career with TCS internships",
-    "company": "TCS",
-    "location": "",
-    "date": "2025-06-14T11:37:53.240340",
-    "url": "https://www.tcs.com/careers/india/internship"
-  },
-  {
-    "title": "Consultant",
-    "company": "HCL",
-    "location": "Digital Workplace",
-    "date": "2025-06-14T11:37:59.938966",
-    "url": "https://www.hcltech.com/jobs/consultant-19"
-  },
-  {
-    "title": "Campus Hiring",
-    "company": "HCL",
-    "location": "Digital Workplace",
-    "date": "2025-06-14T11:38:05.035616",
-    "url": "https://www.hcltech.com/careers/campus-hiring"
-  },
-  {
-    "title": "Embedded Engineer",
-    "company": "HCL",
-    "location": "Digital Workplace",
-    "date": "2025-06-14T11:38:08.117451",
-    "url": "https://www.hcltech.com/careers/embedded-engineer"
-  },
-  {
-    "title": "Software Engineer Java",
-    "company": "HCL",
-    "location": "Digital Workplace",
-    "date": "2025-06-14T11:38:11.180807",
-    "url": "https://www.hcltech.com/careers/software-engineer-java"
-  },
-  {
-    "title": "Software engineer",
-    "company": "HCL",
-    "location": "Digital Workplace",
-    "date": "2025-06-14T11:38:13.979938",
-    "url": "https://www.hcltech.com/jobs/software-engineer"
-  },
-  {
-    "title": "Consultant",
-    "company": "HCL",
-    "location": "Digital Workplace",
-    "date": "2025-06-14T11:38:17.668567",
-    "url": "https://www.hcltech.com/jobs/consultant"
-  },
-  {
-    "title": "Careers in India",
-    "company": "HCL",
-    "location": "Digital Workplace",
-    "date": "2025-06-14T11:38:24.379009",
-    "url": "https://www.hcltech.com/careers/careers-in-india"
+    "url": "https://www.naukri.com/job-listings-senior-machine-learning-lead-llm-avalara-india-kolkata-mumbai-new-delhi-hyderabad-pune-chennai-bengaluru-8-to-13-years-120625504345",
+    "skills": [
+      "Computer science",
+      "Cloud computing",
+      "GCP",
+      "Analytical",
+      "Machine learning",
+      "Debugging",
+      "Conceptualization",
+      "Data structures"
+    ],
+    "description": "Bachelors degree with computer science exposure . Proficiency working in cloud computing environments (AWS,Azure,GCP),Machine Learning frameworks,and software development best practices"
   }
 ]
