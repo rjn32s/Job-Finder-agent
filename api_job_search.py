@@ -47,14 +47,29 @@ index_dir = "data/vector_index"
 @app.on_event("startup")
 async def startup_event():
     jobs_path = "data/jobs.json"
+    
+    # Ensure the data directory exists
+    os.makedirs(os.path.dirname(jobs_path), exist_ok=True)
+
     if os.path.exists(os.path.join(index_dir, "jobs.index")):
         matcher.load_index(index_dir)
     else:
-        # Use batch processing for initial indexing
-        with open(jobs_path, 'r') as f:
-            jobs = json.load(f)
-        matcher.batch_index_jobs(jobs, batch_size=1000)
-        matcher.save_index(index_dir)
+        # If jobs.json exists and is not empty, build the index from it.
+        if os.path.exists(jobs_path) and os.path.getsize(jobs_path) > 0:
+            try:
+                with open(jobs_path, 'r') as f:
+                    jobs = json.load(f)
+                if jobs:
+                    matcher.batch_index_jobs(jobs, batch_size=1000)
+                    matcher.save_index(index_dir)
+            except (json.JSONDecodeError, FileNotFoundError):
+                print("Could not build index. File 'jobs.json' might be corrupt or missing.")
+        else:
+            print("'jobs.json' not found or is empty. Starting with an empty search index.")
+            # Optional: Create an empty jobs file if it doesn't exist
+            if not os.path.exists(jobs_path):
+                with open(jobs_path, 'w') as f:
+                    json.dump([], f)
 
 class JobSearchRequest(BaseModel):
     title: Optional[str] = None
