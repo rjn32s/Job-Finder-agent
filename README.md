@@ -76,3 +76,13 @@ curl -X POST http://localhost:8000/match_resume \
   python bot/cli.py
   ```
   and follow the interactive prompts!
+
+
+  How to run the APP: 
+  Asssuming you have started the server, run the following command:
+  ```bash
+  cd frontend
+  npm run dev
+  ```
+  This will start the Next.js app on http://localhost:3000
+
