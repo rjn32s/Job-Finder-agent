@@ -30,4 +30,4 @@ RUN npm --prefix frontend run build
 EXPOSE 8000
 
 # The command to run when the container starts
-CMD ["/app/.venv/bin/uvicorn", "api_job_search:app", "--host", "0.0.0.0", "--port", "8000"] 
+CMD /app/.venv/bin/uvicorn api_job_search:app --host 0.0.0.0 --port ${PORT:-8000} 

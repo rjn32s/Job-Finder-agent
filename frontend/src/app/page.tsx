@@ -16,7 +16,7 @@ export default function Home() {
     setError('');
     setJobs([]);
     try {
-      const res = await fetch('http://localhost:8000/scrape_and_save_jobs', {
+      const res = await fetch('/scrape_and_save_jobs', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
