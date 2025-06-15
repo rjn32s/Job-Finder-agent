@@ -1,0 +1,37 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+
+# Node
+node_modules/
+npm-debug.log
+
+# IDE / Editor specific
+.vscode/
+.idea/
+
+# Other
+*.log
+uv.lock
+jobs.json
+naukri_scraper.log
+resume.json
+requirements_vector.txt
+requirements.txt
+setup.py
+README.md
+run_vector_search.py
+.python-version
+.env.example
+NOTEPADS
+OUTLINE
+TIMELINE
+VS CODE PETS

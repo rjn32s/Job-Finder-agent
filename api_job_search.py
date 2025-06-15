@@ -12,6 +12,9 @@ import faiss
 import numpy as np
 from matcher.matcher import keyword_match_jobs
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+import pathlib
 
 app = FastAPI()
 app.add_middleware(
@@ -21,6 +24,18 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# --- START: NEXT.JS SERVING LOGIC ---
+# Define the path to the frontend's build directory
+frontend_dir = pathlib.Path(__file__).parent / "frontend"
+# The static assets are in .next/static
+static_dir = frontend_dir / ".next" / "static"
+
+# Mount the static assets from the .next/static directory
+# The path MUST be "/_next/static" for Next.js to find its assets
+app.mount("/_next/static", StaticFiles(directory=static_dir), name="next-static")
+# --- END: NEXT.JS SERVING LOGIC ---
+
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
 OUTPUT_FILE = os.path.join(DATA_DIR, 'jobs.json')
 
@@ -253,4 +268,21 @@ async def match_resume_keyword(resume: dict, n: int = 5):
             })
         return results
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e)) 
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/{full_path:path}")
+async def serve_next_app(full_path: str):
+    """
+    Serve the Next.js app.
+    This catch-all route handles all other requests and serves the Next.js app,
+    allowing client-side routing to take over.
+    """
+    # The main entry point for the Next.js App Router
+    index_path = pathlib.Path(__file__).parent / "frontend" / ".next" / "server" / "app" / "index.html"
+    
+    # For any path that is not an API route, serve the Next.js app.
+    if index_path.exists():
+        return FileResponse(index_path)
+    else:
+        # If the index file doesn't exist, it likely means the frontend wasn't built correctly.
+        raise HTTPException(status_code=404, detail="Next.js app not found. Please build the frontend.") 
