@@ -25,6 +25,42 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# --- LAZY LOADING FOR SEMANTIC MATCHER ---
+
+@lru_cache(maxsize=1)
+def get_matcher() -> SemanticMatcher:
+    """
+    Initializes and returns the SemanticMatcher, loading it only once.
+    This "lazy loading" prevents the app from timing out on startup.
+    """
+    print("Initializing SemanticMatcher for the first time...")
+    matcher = SemanticMatcher()
+    
+    index_dir = "data/vector_index"
+    jobs_path = "data/jobs.json"
+    
+    if os.path.exists(os.path.join(index_dir, "jobs.index")):
+        print(f"Loading existing FAISS index from {index_dir}.")
+        matcher.load_index(index_dir)
+    elif os.path.exists(jobs_path) and os.path.getsize(jobs_path) > 0:
+        print(f"Building FAISS index from {jobs_path}...")
+        try:
+            with open(jobs_path, 'r') as f:
+                jobs = json.load(f)
+            if jobs:
+                matcher.batch_index_jobs(jobs, batch_size=1000)
+                matcher.save_index(index_dir)
+            print("Index built and saved.")
+        except (json.JSONDecodeError, FileNotFoundError):
+            print(f"Could not build index from {jobs_path}.")
+    else:
+        print("No existing index or jobs file. Matcher ready with no data.")
+        
+    print("SemanticMatcher is ready.")
+    return matcher
+
+# --- END LAZY LOADING ---
+
 # --- START: NEXT.JS SERVING LOGIC ---
 # Define the path to the frontend's build directory
 frontend_dir = pathlib.Path(__file__).parent / "frontend"
@@ -39,37 +75,15 @@ app.mount("/_next/static", StaticFiles(directory=static_dir), name="next-static"
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
 OUTPUT_FILE = os.path.join(DATA_DIR, 'jobs.json')
 
-# Initialize semantic matcher with optimizations
-matcher = SemanticMatcher()
-index_dir = "data/vector_index"
-
-# Load or create index on startup
+# A simple startup event to ensure directories and files exist.
 @app.on_event("startup")
 async def startup_event():
-    jobs_path = "data/jobs.json"
-    
-    # Ensure the data directory exists
-    os.makedirs(os.path.dirname(jobs_path), exist_ok=True)
-
-    if os.path.exists(os.path.join(index_dir, "jobs.index")):
-        matcher.load_index(index_dir)
-    else:
-        # If jobs.json exists and is not empty, build the index from it.
-        if os.path.exists(jobs_path) and os.path.getsize(jobs_path) > 0:
-            try:
-                with open(jobs_path, 'r') as f:
-                    jobs = json.load(f)
-                if jobs:
-                    matcher.batch_index_jobs(jobs, batch_size=1000)
-                    matcher.save_index(index_dir)
-            except (json.JSONDecodeError, FileNotFoundError):
-                print("Could not build index. File 'jobs.json' might be corrupt or missing.")
-        else:
-            print("'jobs.json' not found or is empty. Starting with an empty search index.")
-            # Optional: Create an empty jobs file if it doesn't exist
-            if not os.path.exists(jobs_path):
-                with open(jobs_path, 'w') as f:
-                    json.dump([], f)
+    os.makedirs(DATA_DIR, exist_ok=True)
+    os.makedirs("data/vector_index", exist_ok=True)
+    if not os.path.exists(OUTPUT_FILE):
+        with open(OUTPUT_FILE, 'w') as f:
+            json.dump([], f)
+    print("Startup complete. SemanticMatcher will be loaded on first API call.")
 
 class JobSearchRequest(BaseModel):
     title: Optional[str] = None
@@ -100,6 +114,7 @@ class JobResponse(BaseModel):
 # Cache frequently used search results
 @lru_cache(maxsize=1000)
 def cached_search(query: str, k: int = 10):
+    matcher = get_matcher()
     return matcher.search_jobs(query, k=k)
 
 @app.post("/search_jobs", response_model=List[JobResponse])
@@ -170,6 +185,7 @@ async def search_jobs(request: JobSearchRequest):
 @app.post("/match_resume", response_model=List[JobResponse])
 async def match_resume(resume: dict):
     try:
+        matcher = get_matcher()
         min_similarity = resume.pop("min_similarity", 0.0)
         # Use semantic matcher to find matching jobs with minimum similarity threshold
         results = matcher.match_resume_to_jobs(resume, k=10, min_similarity=min_similarity)
@@ -252,6 +268,13 @@ def scrape_and_save_jobs(req: JobSearchRequest):
     # Save to /data/jobs.json
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(deduped_results, f, ensure_ascii=False, indent=2)
+
+    # After scraping and saving new jobs, we should update our search index.
+    matcher = get_matcher()
+    print("Updating search index with new jobs...")
+    matcher.batch_index_jobs(deduped_results, batch_size=1000)
+    matcher.save_index("data/vector_index")
+    print("Search index updated.")
 
     return deduped_results
 
