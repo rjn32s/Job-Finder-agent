@@ -28,6 +28,7 @@ export default function Home() {
       });
       if (!res.ok) throw new Error('API error');
       const data = await res.json();
+      console.log('API jobs response:', data);
       setJobs(data);
     } catch (err) {
       setError('Failed to fetch jobs.');
@@ -83,6 +84,18 @@ export default function Home() {
           </button>
         </form>
         {error && <div className="text-red-600 mb-4">{error}</div>}
+        {loading && (
+          <div className="flex justify-center items-center my-8">
+            <svg className="animate-spin h-8 w-8 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+            </svg>
+            <span className="ml-2 text-blue-600 dark:text-blue-400">Loading...</span>
+          </div>
+        )}
+        {!loading && jobs.length === 0 && !error && (
+          <div className="text-gray-700 dark:text-gray-300 text-center my-8">No jobs found.</div>
+        )}
         <div>
           {jobs.length > 0 && <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Results</h2>}
           {jobs.map((job, idx) => (

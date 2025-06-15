@@ -106,7 +106,7 @@ class CompanyScraper:
 
     def _get_random_delay(self) -> float:
         """Generate a random delay between requests"""
-        delay = random.uniform(2, 5)
+        delay = random.uniform(0.5, 1)
         self.logger.debug(f"Generated random delay: {delay:.2f} seconds")
         return delay
 
