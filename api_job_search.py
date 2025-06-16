@@ -48,7 +48,7 @@ def get_matcher() -> SemanticMatcher:
             with open(jobs_path, 'r') as f:
                 jobs = json.load(f)
             if jobs:
-                matcher.batch_index_jobs(jobs, batch_size=1000)
+                matcher.index_jobs(jobs_path, index_dir)
                 matcher.save_index(index_dir)
             print("Index built and saved.")
         except (json.JSONDecodeError, FileNotFoundError):
@@ -272,8 +272,7 @@ def scrape_and_save_jobs(req: JobSearchRequest):
     # After scraping and saving new jobs, we should update our search index.
     matcher = get_matcher()
     print("Updating search index with new jobs...")
-    matcher.batch_index_jobs(deduped_results, batch_size=1000)
-    matcher.save_index("data/vector_index")
+    matcher.index_jobs(OUTPUT_FILE, "data/vector_index")
     print("Search index updated.")
 
     return deduped_results
